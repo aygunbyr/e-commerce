@@ -5,8 +5,12 @@ import ProductDetail from "./pages/ProductDetail";
 import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
 import "./App.css";
+import Profile from "./pages/Profile";
+import { useAuth } from "./contexts/AuthContext";
 
 function App() {
+  const { loggedIn } = useAuth();
+
   return (
     <Router>
       <div>
@@ -21,6 +25,7 @@ function App() {
             />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            {loggedIn ? <Route path="/profile" element={<Profile />} /> : null}
           </Routes>
         </div>
       </div>
