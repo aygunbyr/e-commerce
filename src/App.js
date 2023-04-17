@@ -6,7 +6,9 @@ import Signin from "./pages/Auth/Signin";
 import Signup from "./pages/Auth/Signup";
 import "./App.css";
 import Profile from "./pages/Profile";
+import Basket from "./pages/Basket";
 import { useAuth } from "./contexts/AuthContext";
+import Error404 from "./pages/Error404";
 
 function App() {
   const { loggedIn } = useAuth();
@@ -25,7 +27,13 @@ function App() {
             />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
-            {loggedIn ? <Route path="/profile" element={<Profile />} /> : null}
+            {loggedIn && (
+              <>
+                <Route path="/basket" element={<Basket />} />
+                <Route path="/profile" element={<Profile />} />
+              </>
+            )}
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </div>
       </div>
