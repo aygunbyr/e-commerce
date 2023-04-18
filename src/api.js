@@ -66,3 +66,12 @@ export const fetchLogout = async () => {
   );
   return data;
 };
+
+export const postOrder = async (order) => {
+  const { data } = await axios.post(
+    `${process.env.REACT_APP_BASE_ENDPOINT}/order`,
+    order
+  );
+
+  return data;
+};
