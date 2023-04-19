@@ -9,9 +9,13 @@ import Profile from "./pages/Profile";
 import Basket from "./pages/Basket";
 import { useAuth } from "./contexts/AuthContext";
 import Error404 from "./pages/Error404";
+import Admin from "./pages/Admin";
+import AdminHome from "./pages/Admin/Home";
+import AdminOrders from "./pages/Admin/Orders";
+import AdminProducts from "./pages/Admin/Products";
 
 function App() {
-  const { loggedIn } = useAuth();
+  const { loggedIn, user } = useAuth();
 
   return (
     <Router>
@@ -31,6 +35,13 @@ function App() {
               <>
                 <Route path="/basket" element={<Basket />} />
                 <Route path="/profile" element={<Profile />} />
+                {user?.role === "admin" && (
+                  <Route path="/admin" element={<Admin />} admin={true}>
+                    <Route index element={<AdminHome />} />
+                    <Route path="orders" element={<AdminOrders />} />
+                    <Route path="products" element={<AdminProducts />} />
+                  </Route>
+                )}
               </>
             )}
             <Route path="*" element={<Error404 />} />
