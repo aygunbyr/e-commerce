@@ -13,6 +13,7 @@ import Admin from "./pages/Admin";
 import AdminHome from "./pages/Admin/Home";
 import AdminOrders from "./pages/Admin/Orders";
 import AdminProducts from "./pages/Admin/Products";
+import AdminProductDetail from "./pages/Admin/ProductDetail";
 
 function App() {
   const { loggedIn, user } = useAuth();
@@ -40,6 +41,10 @@ function App() {
                     <Route index element={<AdminHome />} />
                     <Route path="orders" element={<AdminOrders />} />
                     <Route path="products" element={<AdminProducts />} />
+                    <Route
+                      path="products/:product_id"
+                      element={<AdminProductDetail />}
+                    />
                   </Route>
                 )}
               </>
