@@ -35,8 +35,6 @@ function Signin() {
         login(loginResponse);
 
         navigate("/profile");
-
-        console.log(loginResponse);
       } catch (e) {
         bag.setErrors({ general: e.response.data.message });
       }

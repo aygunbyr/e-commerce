@@ -25,8 +25,6 @@ function AdminOrders() {
     return <div>Error {error.message}</div>;
   }
 
-  console.log(data);
-
   return (
     <div>
       <Text fontSize="2xl" p="5">

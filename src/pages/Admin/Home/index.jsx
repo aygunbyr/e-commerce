@@ -1,7 +1,7 @@
-import React from "react";
+import { Box } from "@chakra-ui/react";
 
 function AdminHome() {
-  return <div>Admin Home</div>;
+  return <Box p="5">Admin Home</Box>;
 }
 
 export default AdminHome;
