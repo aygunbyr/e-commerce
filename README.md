@@ -19,27 +19,27 @@ I learnt some technologies during this development process.
 
 ### Products
 
-![image info](./screenshots/Screenshot-1.png)
+![Products](./screenshots/Screenshot-1.png)
 
 ### Product Details
 
-![image info](./screenshots/Screenshot-2.png)
+![Product Details](./screenshots/Screenshot-2.png)
 
 ### Cart
 
-![image info](./screenshots/Screenshot-3.png)
+![Cart](./screenshots/Screenshot-3.png)
 
 ### Admin Panel: Orders
 
-![image info](./screenshots/Screenshot-4.png)
+![Admin Panel: Orders](./screenshots/Screenshot-4.png)
 
 ### Admin Panel: Products
 
-![image info](./screenshots/imScreenshot-5.png)
+![Admin Panel: Products](./screenshots/Screenshot-5.png)
 
 ### Admin Panel: New Product
 
-![image info](./screenshots/Screenshot-6.png)
+![Admin Panel: New Product](./screenshots/Screenshot-6.png)
 
 ## Getting Started
 
