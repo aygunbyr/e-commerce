@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# E-Commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have developed this project by following [Patika.dev React Course](https://academy.patika.dev/courses/react)
 
-## Available Scripts
+I have not developed this project by myself. Thanks to Instructor @meseven
 
-In the project directory, you can run:
+I learnt some technologies during this development process.
 
-### `npm start`
+## Technologies Used In Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React, Context Api
+- React Router v6
+- React Query (Tanstack Query)
+- Chakra UI, Ant Design
+- Formik, Yup
+- Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+### Products
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![image info](./screenshots/Screenshot-1.png)
 
-### `npm run build`
+### Product Details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image info](./screenshots/Screenshot-2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Cart
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image info](./screenshots/Screenshot-3.png)
 
-### `npm run eject`
+### Admin Panel: Orders
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image info](./screenshots/Screenshot-4.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Admin Panel: Products
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image info](./screenshots/imScreenshot-5.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Admin Panel: New Product
 
-## Learn More
+![image info](./screenshots/Screenshot-6.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can download [backend here](https://drive.google.com/drive/folders/16y0EP1FsGxiaGFArTsxxYNyYYO7upATM?usp=sharing)
 
-### Code Splitting
+Redis must be installed on your computer, if you are using Windows you can install Redis on WSL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Install Redis on Windows](https://redis.io/docs/getting-started/installation/install-redis-on-windows/)
 
-### Analyzing the Bundle Size
+Instead you can use [Redis Cloud](https://redis.com/redis-enterprise-cloud/overview/) or other cloud solutions you want,
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+MongoDB must be installed on your computer
 
-### Making a Progressive Web App
+[MongoDB Compass](https://www.mongodb.com/products/compass)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Create database `test`
 
-### Advanced Configuration
+Create collections `products`, `orders`, `users`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Create .env file on root directory, example above:
 
-### Deployment
+```
+MONGO_URI=mongodb://127.0.0.1:27017
+JWT_SECRET=ENTER_YOUR_SECRET
+JWT_REFRESH_SECRET=ENTER_YOUR_REFRESH_SECRET
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Install packages for backend
 
-### `npm run build` fails to minify
+```
+cd backend
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Start backend
+
+```
+npm run dev
+```
+
+Install packages for client
+
+```
+cd e-commerce
+npm install
+```
+
+Start client
+
+```
+npm start
+```
